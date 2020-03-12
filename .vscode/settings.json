@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "clasificador_dcl_vs_control_initialize.h": "c",
+        "clasificador_ea_vs_control_initialize.h": "c",
+        "iostream": "c",
+        "istream": "c",
+        "clasificador_dft_vs_control.h": "c",
+        "clasificador_parkinsionismos_vs_control_terminate.h": "c",
+        "clasificador_ea_vs_control.h": "c",
+        "clasificador_parkinson_vs_control_terminate.h": "c"
+    }
+}

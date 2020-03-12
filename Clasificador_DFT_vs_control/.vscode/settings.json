@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "string.h": "c",
+        "clasificador_dft_vs_control.h": "c",
+        "rt_nonfinite.h": "c",
+        "clasificador_dft_vs_control_emxapi.h": "c",
+        "clasificador_dft_vs_control_initialize.h": "c"
+    }
+}

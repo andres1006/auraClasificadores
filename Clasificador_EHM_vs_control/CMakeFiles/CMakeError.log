@@ -1,0 +1,642 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d624b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d624b.dir/build.make CMakeFiles/cmTC_d624b.dir/build
+make[1]: Entering directory '/home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d624b.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d624b.dir/testCCompiler.c.o   -c /home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_d624b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d624b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d624b.dir/testCCompiler.c.o  -o cmTC_d624b 
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d624b.dir/build.make:97: recipe for target 'cmTC_d624b' failed
+make[1]: *** [cmTC_d624b] Error 1
+make[1]: Leaving directory '/home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d624b/fast' failed
+make: *** [cmTC_d624b/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1cb6d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1cb6d.dir/build.make CMakeFiles/cmTC_1cb6d.dir/build
+make[1]: Entering directory '/home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1cb6d.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1cb6d.dir/testCCompiler.c.o   -c /home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_1cb6d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cb6d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1cb6d.dir/testCCompiler.c.o  -o cmTC_1cb6d 
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1cb6d.dir/build.make:97: recipe for target 'cmTC_1cb6d' failed
+make[1]: *** [cmTC_1cb6d] Error 1
+make[1]: Leaving directory '/home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1cb6d/fast' failed
+make: *** [cmTC_1cb6d/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a88b1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a88b1.dir/build.make CMakeFiles/cmTC_a88b1.dir/build
+make[1]: Entering directory '/home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a88b1.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a88b1.dir/testCCompiler.c.o   -c /home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_a88b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a88b1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a88b1.dir/testCCompiler.c.o  -o cmTC_a88b1 
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a88b1.dir/build.make:97: recipe for target 'cmTC_a88b1' failed
+make[1]: *** [cmTC_a88b1] Error 1
+make[1]: Leaving directory '/home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a88b1/fast' failed
+make: *** [cmTC_a88b1/fast] Error 2
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4c2be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4c2be.dir/build.make CMakeFiles/cmTC_4c2be.dir/build
+make[1]: Entering directory '/home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c2be.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4c2be.dir/testCCompiler.c.o   -c /home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_4c2be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c2be.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4c2be.dir/testCCompiler.c.o  -o cmTC_4c2be 
+/usr/bin/ld: cannot find Scrt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4c2be.dir/build.make:97: recipe for target 'cmTC_4c2be' failed
+make[1]: *** [cmTC_4c2be] Error 1
+make[1]: Leaving directory '/home/andresagudelo/Documentos/Clasificadores/Compilados/Clasificador_EHM_vs_control/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4c2be/fast' failed
+make: *** [cmTC_4c2be/fast] Error 2
+
+

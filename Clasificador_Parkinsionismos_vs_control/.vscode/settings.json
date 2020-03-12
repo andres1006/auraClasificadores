@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "rt_nonfinite.h": "c",
+        "rtwtypes.h": "c",
+        "stddef.h": "c",
+        "tmwtypes.h": "c"
+    }
+}

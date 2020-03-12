@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "rt_nonfinite.h": "c",
+        "clasificador_ea_vs_control.h": "c",
+        "rtwtypes.h": "c"
+    }
+}

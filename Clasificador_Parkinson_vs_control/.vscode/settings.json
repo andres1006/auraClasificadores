@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "clasificador_parkinson_vs_control_initialize.h": "c",
+        "clasificador_parkinson_vs_control.h": "c",
+        "main.h": "c",
+        "clasificador_parkinson_vs_control_emxapi.h": "c",
+        "clasificador_parkinson_vs_control_terminate.h": "c"
+    }
+}
