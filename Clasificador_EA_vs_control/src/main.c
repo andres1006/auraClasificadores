@@ -52,25 +52,37 @@ static void main_Clasificador_EA_vs_control(char *vec[], int size);
 /* Function Definitions */
 static emxArray_real_T *argInit_Unboundedx12_real_T(char *vec[], int size)
 {
-  double datos[size-2];
+  //double datos[size-2];
 
-  int i;
-  for (i = 0; i < (size - 2); i++)
-  {
-    datos[i] = atof(vec[i + 2]);
-  }
+  // int i;
+  // for (i = 0; i < (size - 2); i++)
+  // {
+  //   datos[i] = atof(vec[i + 2]);
+  // }
 
-  for (i = 0; i < ((int)(sizeof(datos) / sizeof(datos[2])) - 1); i++)
-  {
-    printf("datos[%d] = %f\n", i, datos[i]);
-  }
+  // for (i = 0; i < ((int)(sizeof(datos) / sizeof(datos[2])) - 1); i++)
+  // {
+  //   printf("datos[%d] = %f\n", i, datos[i]);
+  // }
 
+  double datos[] = {12, 100 ,8, 100, 11, 12, 0, 91.67 ,0 ,8, 0.54, 0.52};
+    //Mostrar información del emxArray_real_T
+    // for (int i = 0; i < 12; i = i + 1)
+    // {
+    //   printf("%f\n", datos[i]);
+    // }
   emxArray_real_T *result;
 
   //Convertir vector de double al tipo de dato "emxArray_real_T"
-  result = emxCreateWrapper_real_T(datos, 1, ((int)(sizeof(datos) / sizeof(datos[2])) - 1));
+  result = emxCreateWrapper_real_T(datos, 1, 12);
+  //Mostrar información del emxArray_real_T
+     // //Mostrar información del emxArray_real_T
+     for (int i = 0; i < 12; i = i + 1)
+     {
+       printf("%f\n", result->data[i]);
+     }
 
-  return result;
+    return result;
 }
 
 static void main_Clasificador_EA_vs_control(char *vec[], int size)
@@ -85,17 +97,42 @@ static void main_Clasificador_EA_vs_control(char *vec[], int size)
 
   // //Inicializar variables
   emxInitArray_real_T(&label, 1);
-  emxInitArray_real_T(&x, 2);
+  emxInitArray_real_T(&x, 1);
 
   /* Initialize function 'Clasificador_EA_vs_control' input arguments. */
   /* Initialize function input argument 'x'. */ 
-  x = argInit_Unboundedx12_real_T(vec, size);
+  double datos[size-2];
+
+  int i;
+  for (i = 0; i < (size - 2); i++)
+  {
+    datos[i] = atof(vec[i + 2]);
+  }
+
+  for (i = 0; i < ((int)(sizeof(datos) / sizeof(datos[2])) - 1); i++)
+  {
+    printf("datos[%d] = %f\n", i, datos[i]);
+  }
+
+
+  //Convertir vector de double al tipo de dato "emxArray_real_T"
+  x = emxCreateWrapper_real_T(datos, 1, ((int)(sizeof(datos) / sizeof(datos[2])) - 1));
+  //res = argInit_Unboundedx12_real_T(vec, size);
+    // //Mostrar información del emxArray_real_T
+    for (int i = 0; i < 12; i = i + 1)
+    {
+      printf("%f\n", x->data[i]);
+    }
+
+
 
   /* Call the entry-point 'Clasificador_EA_vs_control'. */
   Clasificador_EA_vs_control(x, label);
 
+
+
   // //Mostrar información del LABEL
-  printf("%f\n", label->data[0]);
+ 
 
   // //Convertir el label tipo double a string
   sprintf(result, "%f", label->data[0]);
@@ -104,7 +141,7 @@ static void main_Clasificador_EA_vs_control(char *vec[], int size)
   // //Crear puntero para el archivo
   FILE *f1;
   strcat(vec[1],"/Class_AD.csv" );
-  printf("%s", vec[1]);
+  //printf("%s", vec[1]);
 
 
   // //Abrir archivo para la lectura

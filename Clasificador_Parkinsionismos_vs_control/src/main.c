@@ -89,7 +89,28 @@ static void main_Clasificador_Parkinsionismos_vs_control(char *vec[], int size)
 
   /* Initialize function 'Clasificador_Parkinsionismos_vs_control' input arguments. */
   /* Initialize function input argument 'x'. */ 
-  x = argInit_Unboundedx12_real_T(vec, size);
+  double datos[size-2];
+
+  int i;
+  for (i = 0; i < (size - 2); i++)
+  {
+    datos[i] = atof(vec[i + 2]);
+  }
+
+  for (i = 0; i < ((int)(sizeof(datos) / sizeof(datos[2])) - 1); i++)
+  {
+    printf("datos[%d] = %f\n", i, datos[i]);
+  }
+
+
+  //Convertir vector de double al tipo de dato "emxArray_real_T"
+  x = emxCreateWrapper_real_T(datos, 1, ((int)(sizeof(datos) / sizeof(datos[2])) - 1));
+  //res = argInit_Unboundedx12_real_T(vec, size);
+    // //Mostrar información del emxArray_real_T
+    for (int i = 0; i < 12; i = i + 1)
+    {
+      printf("%f\n", x->data[i]);
+    }
 
   /* Call the entry-point 'Clasificador_Parkinsionismos_vs_control'. */
   Clasificador_Parkinsionismos_vs_control(x, label);
