@@ -1,5 +1,5 @@
-/home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_Parkinson_vs_control/CMakeFiles/rebuild_cache.dir
-/home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_Parkinson_vs_control/CMakeFiles/edit_cache.dir
-/home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_Parkinson_vs_control/src/CMakeFiles/rebuild_cache.dir
-/home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_Parkinson_vs_control/src/CMakeFiles/main.dir
-/home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_Parkinson_vs_control/src/CMakeFiles/edit_cache.dir
+/Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_Parkinson_vs_control/CMakeFiles/rebuild_cache.dir
+/Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_Parkinson_vs_control/CMakeFiles/edit_cache.dir
+/Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_Parkinson_vs_control/src/CMakeFiles/rebuild_cache.dir
+/Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_Parkinson_vs_control/src/CMakeFiles/edit_cache.dir
+/Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_Parkinson_vs_control/src/CMakeFiles/main.dir

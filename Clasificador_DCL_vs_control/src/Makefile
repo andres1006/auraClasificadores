@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -56,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.17.2/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control
+CMAKE_SOURCE_DIR = /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control
+CMAKE_BINARY_DIR = /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,7 +79,7 @@ CMAKE_BINARY_DIR = /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.17.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -97,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(CMAKE_COMMAND) -E cmake_progress_start /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control/CMakeFiles /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control/src/CMakeFiles/progress.marks
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control/CMakeFiles 0
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(CMAKE_COMMAND) -E cmake_progress_start /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control/CMakeFiles /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control/src/CMakeFiles/progress.marks
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/main.dir/rule:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
 .PHONY : src/CMakeFiles/main.dir/rule
 
 # Convenience name for target.
@@ -139,7 +142,7 @@ main: src/CMakeFiles/main.dir/rule
 
 # fast build rule for target.
 main/fast:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
 Clasificador_DCL_vs_control.o: Clasificador_DCL_vs_control.c.o
@@ -148,7 +151,7 @@ Clasificador_DCL_vs_control.o: Clasificador_DCL_vs_control.c.o
 
 # target to build an object file
 Clasificador_DCL_vs_control.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control.c.o
 .PHONY : Clasificador_DCL_vs_control.c.o
 
 Clasificador_DCL_vs_control.i: Clasificador_DCL_vs_control.c.i
@@ -157,7 +160,7 @@ Clasificador_DCL_vs_control.i: Clasificador_DCL_vs_control.c.i
 
 # target to preprocess a source file
 Clasificador_DCL_vs_control.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control.c.i
 .PHONY : Clasificador_DCL_vs_control.c.i
 
 Clasificador_DCL_vs_control.s: Clasificador_DCL_vs_control.c.s
@@ -166,7 +169,7 @@ Clasificador_DCL_vs_control.s: Clasificador_DCL_vs_control.c.s
 
 # target to generate assembly for a file
 Clasificador_DCL_vs_control.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control.c.s
 .PHONY : Clasificador_DCL_vs_control.c.s
 
 Clasificador_DCL_vs_control_emxAPI.o: Clasificador_DCL_vs_control_emxAPI.c.o
@@ -175,7 +178,7 @@ Clasificador_DCL_vs_control_emxAPI.o: Clasificador_DCL_vs_control_emxAPI.c.o
 
 # target to build an object file
 Clasificador_DCL_vs_control_emxAPI.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxAPI.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxAPI.c.o
 .PHONY : Clasificador_DCL_vs_control_emxAPI.c.o
 
 Clasificador_DCL_vs_control_emxAPI.i: Clasificador_DCL_vs_control_emxAPI.c.i
@@ -184,7 +187,7 @@ Clasificador_DCL_vs_control_emxAPI.i: Clasificador_DCL_vs_control_emxAPI.c.i
 
 # target to preprocess a source file
 Clasificador_DCL_vs_control_emxAPI.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxAPI.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxAPI.c.i
 .PHONY : Clasificador_DCL_vs_control_emxAPI.c.i
 
 Clasificador_DCL_vs_control_emxAPI.s: Clasificador_DCL_vs_control_emxAPI.c.s
@@ -193,7 +196,7 @@ Clasificador_DCL_vs_control_emxAPI.s: Clasificador_DCL_vs_control_emxAPI.c.s
 
 # target to generate assembly for a file
 Clasificador_DCL_vs_control_emxAPI.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxAPI.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxAPI.c.s
 .PHONY : Clasificador_DCL_vs_control_emxAPI.c.s
 
 Clasificador_DCL_vs_control_emxutil.o: Clasificador_DCL_vs_control_emxutil.c.o
@@ -202,7 +205,7 @@ Clasificador_DCL_vs_control_emxutil.o: Clasificador_DCL_vs_control_emxutil.c.o
 
 # target to build an object file
 Clasificador_DCL_vs_control_emxutil.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxutil.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxutil.c.o
 .PHONY : Clasificador_DCL_vs_control_emxutil.c.o
 
 Clasificador_DCL_vs_control_emxutil.i: Clasificador_DCL_vs_control_emxutil.c.i
@@ -211,7 +214,7 @@ Clasificador_DCL_vs_control_emxutil.i: Clasificador_DCL_vs_control_emxutil.c.i
 
 # target to preprocess a source file
 Clasificador_DCL_vs_control_emxutil.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxutil.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxutil.c.i
 .PHONY : Clasificador_DCL_vs_control_emxutil.c.i
 
 Clasificador_DCL_vs_control_emxutil.s: Clasificador_DCL_vs_control_emxutil.c.s
@@ -220,7 +223,7 @@ Clasificador_DCL_vs_control_emxutil.s: Clasificador_DCL_vs_control_emxutil.c.s
 
 # target to generate assembly for a file
 Clasificador_DCL_vs_control_emxutil.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxutil.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_emxutil.c.s
 .PHONY : Clasificador_DCL_vs_control_emxutil.c.s
 
 Clasificador_DCL_vs_control_initialize.o: Clasificador_DCL_vs_control_initialize.c.o
@@ -229,7 +232,7 @@ Clasificador_DCL_vs_control_initialize.o: Clasificador_DCL_vs_control_initialize
 
 # target to build an object file
 Clasificador_DCL_vs_control_initialize.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_initialize.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_initialize.c.o
 .PHONY : Clasificador_DCL_vs_control_initialize.c.o
 
 Clasificador_DCL_vs_control_initialize.i: Clasificador_DCL_vs_control_initialize.c.i
@@ -238,7 +241,7 @@ Clasificador_DCL_vs_control_initialize.i: Clasificador_DCL_vs_control_initialize
 
 # target to preprocess a source file
 Clasificador_DCL_vs_control_initialize.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_initialize.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_initialize.c.i
 .PHONY : Clasificador_DCL_vs_control_initialize.c.i
 
 Clasificador_DCL_vs_control_initialize.s: Clasificador_DCL_vs_control_initialize.c.s
@@ -247,7 +250,7 @@ Clasificador_DCL_vs_control_initialize.s: Clasificador_DCL_vs_control_initialize
 
 # target to generate assembly for a file
 Clasificador_DCL_vs_control_initialize.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_initialize.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_initialize.c.s
 .PHONY : Clasificador_DCL_vs_control_initialize.c.s
 
 Clasificador_DCL_vs_control_terminate.o: Clasificador_DCL_vs_control_terminate.c.o
@@ -256,7 +259,7 @@ Clasificador_DCL_vs_control_terminate.o: Clasificador_DCL_vs_control_terminate.c
 
 # target to build an object file
 Clasificador_DCL_vs_control_terminate.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_terminate.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_terminate.c.o
 .PHONY : Clasificador_DCL_vs_control_terminate.c.o
 
 Clasificador_DCL_vs_control_terminate.i: Clasificador_DCL_vs_control_terminate.c.i
@@ -265,7 +268,7 @@ Clasificador_DCL_vs_control_terminate.i: Clasificador_DCL_vs_control_terminate.c
 
 # target to preprocess a source file
 Clasificador_DCL_vs_control_terminate.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_terminate.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_terminate.c.i
 .PHONY : Clasificador_DCL_vs_control_terminate.c.i
 
 Clasificador_DCL_vs_control_terminate.s: Clasificador_DCL_vs_control_terminate.c.s
@@ -274,7 +277,7 @@ Clasificador_DCL_vs_control_terminate.s: Clasificador_DCL_vs_control_terminate.c
 
 # target to generate assembly for a file
 Clasificador_DCL_vs_control_terminate.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_terminate.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Clasificador_DCL_vs_control_terminate.c.s
 .PHONY : Clasificador_DCL_vs_control_terminate.c.s
 
 CompactSVM.o: CompactSVM.c.o
@@ -283,7 +286,7 @@ CompactSVM.o: CompactSVM.c.o
 
 # target to build an object file
 CompactSVM.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CompactSVM.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CompactSVM.c.o
 .PHONY : CompactSVM.c.o
 
 CompactSVM.i: CompactSVM.c.i
@@ -292,7 +295,7 @@ CompactSVM.i: CompactSVM.c.i
 
 # target to preprocess a source file
 CompactSVM.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CompactSVM.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CompactSVM.c.i
 .PHONY : CompactSVM.c.i
 
 CompactSVM.s: CompactSVM.c.s
@@ -301,7 +304,7 @@ CompactSVM.s: CompactSVM.c.s
 
 # target to generate assembly for a file
 CompactSVM.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CompactSVM.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/CompactSVM.c.s
 .PHONY : CompactSVM.c.s
 
 Gaussian.o: Gaussian.c.o
@@ -310,7 +313,7 @@ Gaussian.o: Gaussian.c.o
 
 # target to build an object file
 Gaussian.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Gaussian.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Gaussian.c.o
 .PHONY : Gaussian.c.o
 
 Gaussian.i: Gaussian.c.i
@@ -319,7 +322,7 @@ Gaussian.i: Gaussian.c.i
 
 # target to preprocess a source file
 Gaussian.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Gaussian.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Gaussian.c.i
 .PHONY : Gaussian.c.i
 
 Gaussian.s: Gaussian.c.s
@@ -328,7 +331,7 @@ Gaussian.s: Gaussian.c.s
 
 # target to generate assembly for a file
 Gaussian.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Gaussian.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Gaussian.c.s
 .PHONY : Gaussian.c.s
 
 main.o: main.c.o
@@ -337,7 +340,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -346,7 +349,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -355,7 +358,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
 rtGetInf.o: rtGetInf.c.o
@@ -364,7 +367,7 @@ rtGetInf.o: rtGetInf.c.o
 
 # target to build an object file
 rtGetInf.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetInf.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetInf.c.o
 .PHONY : rtGetInf.c.o
 
 rtGetInf.i: rtGetInf.c.i
@@ -373,7 +376,7 @@ rtGetInf.i: rtGetInf.c.i
 
 # target to preprocess a source file
 rtGetInf.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetInf.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetInf.c.i
 .PHONY : rtGetInf.c.i
 
 rtGetInf.s: rtGetInf.c.s
@@ -382,7 +385,7 @@ rtGetInf.s: rtGetInf.c.s
 
 # target to generate assembly for a file
 rtGetInf.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetInf.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetInf.c.s
 .PHONY : rtGetInf.c.s
 
 rtGetNaN.o: rtGetNaN.c.o
@@ -391,7 +394,7 @@ rtGetNaN.o: rtGetNaN.c.o
 
 # target to build an object file
 rtGetNaN.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetNaN.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetNaN.c.o
 .PHONY : rtGetNaN.c.o
 
 rtGetNaN.i: rtGetNaN.c.i
@@ -400,7 +403,7 @@ rtGetNaN.i: rtGetNaN.c.i
 
 # target to preprocess a source file
 rtGetNaN.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetNaN.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetNaN.c.i
 .PHONY : rtGetNaN.c.i
 
 rtGetNaN.s: rtGetNaN.c.s
@@ -409,7 +412,7 @@ rtGetNaN.s: rtGetNaN.c.s
 
 # target to generate assembly for a file
 rtGetNaN.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetNaN.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rtGetNaN.c.s
 .PHONY : rtGetNaN.c.s
 
 rt_nonfinite.o: rt_nonfinite.c.o
@@ -418,7 +421,7 @@ rt_nonfinite.o: rt_nonfinite.c.o
 
 # target to build an object file
 rt_nonfinite.c.o:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rt_nonfinite.c.o
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rt_nonfinite.c.o
 .PHONY : rt_nonfinite.c.o
 
 rt_nonfinite.i: rt_nonfinite.c.i
@@ -427,7 +430,7 @@ rt_nonfinite.i: rt_nonfinite.c.i
 
 # target to preprocess a source file
 rt_nonfinite.c.i:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rt_nonfinite.c.i
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rt_nonfinite.c.i
 .PHONY : rt_nonfinite.c.i
 
 rt_nonfinite.s: rt_nonfinite.c.s
@@ -436,7 +439,7 @@ rt_nonfinite.s: rt_nonfinite.c.s
 
 # target to generate assembly for a file
 rt_nonfinite.c.s:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rt_nonfinite.c.s
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/rt_nonfinite.c.s
 .PHONY : rt_nonfinite.c.s
 
 # Help Target
@@ -492,6 +495,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/andresagudelo/Documentos/OCTAVEproyects/Clasificadores/Clasificador_DCL_vs_control && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/andresagudelo/Documents/aura/Clasificadores/Clasificador_DCL_vs_control && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
